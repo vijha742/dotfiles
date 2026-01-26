@@ -1,0 +1,33 @@
+import = ["~/.config/alacritty/colors/tokyo-night.toml"]
+
+live_config_reload = true
+
+
+# window.opacity = 0.75
+[font]
+size = 8.0
+
+[font.bold]
+family = "Hack Nerd Font"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+
+[font.italic]
+family = "Hack Nerd Font"
+
+[font.normal]
+family = "Hack Nerd Font"
+
+[window.padding]
+x = 0 
+y = 0
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Control|Shift"
+
+[env]
+TERM = "xterm-256color"
+

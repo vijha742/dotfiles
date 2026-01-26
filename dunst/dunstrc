@@ -1,0 +1,75 @@
+# ~/.config/dunst/dunstrc
+
+[global]
+    # Font
+    font = Hack Nerd Font 10
+
+    # Notification geometry
+    width = 300
+    # height = 50 # Dunst will adjust height automatically if not set, or use max_height
+    max_height = 300 # Max height for content
+    offset = 10x10 # Distance from screen corner (e.g., top-right)
+    origin = top-right # Placement on screen
+
+    # Padding and Spacing
+    padding = 2
+    horizontal_padding = 5
+    vertical_padding = 5
+    text_icon_padding = 5
+
+    # Ensure sharp corners for a perfect rectangle
+    corner_radius = 15
+
+    # Border width
+    frame_width = 1
+
+    # Main colors (Tokyo Night Storm - background with transparency for glass effect)
+    # The 'CC' at the end of the background hex code means ~80% opacity.
+    # Adjust as desired (00 = fully transparent, FF = fully opaque).
+    background = "#24283B44"
+    foreground = "#A9B1D6"
+    frame_color = "#414868" # A slightly lighter background shade or a subtle accent
+
+    # Other settings
+    timeout = 8 # Notification timeout in seconds
+    icon_position = left
+    word_wrap = yes
+    ellipsize = yes
+    line_height = 0 # 0 means normal line height
+    ignore_dbus_close = false
+    sticky_history = yes # Keeps notifications in history until explicitly closed
+    browser = xdg-open # Command to open URLs clicked in notifications
+
+    # Transparency of the notification window (value from 0.0 to 1.0)
+    # This is handled by picom for blur, but this also affects Dunst's own rendering.
+    # Dunst's 'transparency' option is deprecated, use alpha in background color.
+
+    # Follow mouse or keyboard focus
+    follow_mode = mouse # or keyboard or none
+
+    # Icon theme
+    icon_theme = Papirus # Or your preferred icon theme
+
+    # History
+    history_length = 20
+
+    # Rule for specific applications (example)
+    # [fullscreen_rule]
+    #   match_fullscreen = true
+    #   set_transient = true
+
+[urgency_low]
+    background = "#24283B55"
+    foreground = "#A9B1D6"
+    frame_color = "#414868" # Tokyo Night Background Shade
+
+[urgency_normal]
+    background = "#24283BCC"
+    foreground = "#A9B1D6"
+    frame_color = "#7AA2F7" # Tokyo Night Blue for normal urgency
+
+[urgency_critical]
+    background = "#24283BCC"
+    foreground = "#A9B1D6"
+    frame_color = "#F7768E" # Tokyo Night Red for critical urgency
+    timeout = 0 # Critical notifications stay until dismissed

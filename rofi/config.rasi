@@ -1,0 +1,41 @@
+configuration {
+    modi: "drun,run,window";
+    font: "Monospace 11";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "Applications";
+    display-run: "Run";
+    display-window: "Windows";
+    drun-display-format: "{icon} {name}";
+    sidebar-mode: false;
+    
+    /* Enable icon and text display together */
+    show-match: true;
+    
+    /* Icon settings */
+    drun-match-fields: "name,generic,exec,categories,keywords";
+    drun-show-actions: false;
+    
+    /* Terminal for running terminal apps */
+    terminal: "alacritty";
+    
+    /* SSH settings */
+    ssh-client: "ssh";
+    ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
+    
+    /* Window format */
+    window-format: "{w} {c} {t}";
+    window-command: "wmctrl -i -R {window}";
+    window-thumbnail: false;
+    
+    /* Keybindings */
+    kb-row-up: "Up,Control+k";
+    kb-row-down: "Down,Control+j";
+    kb-accept-entry: "Return,KP_Enter";
+    kb-remove-to-eol: "";
+    kb-mode-next: "Shift+Right,Control+Tab";
+    kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";
+    kb-remove-char-back: "BackSpace";
+}
+
+@theme "themes/tokyonight.rasi"
