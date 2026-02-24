@@ -7,18 +7,22 @@ return {
         enabled = true,
       },
     },
+    nes = {
+      enabled = false,
+    },
   },
   keys = {
-    {
-      '<tab>',
-      function()
-        if not require('sidekick').nes_jump_or_apply() then
-          return '<Tab>'
-        end
-      end,
-      expr = true,
-      desc = 'Goto/Apply Next Edit Suggestion',
-    },
+    -- Disabled since NES is turned off
+    -- {
+    --   '<tab>',
+    --   function()
+    --     if not require('sidekick').nes_jump_or_apply() then
+    --       return '<Tab>'
+    --     end
+    --   end,
+    --   expr = true,
+    --   desc = 'Goto/Apply Next Edit Suggestion',
+    -- },
     {
       '<c-.>',
       function()
