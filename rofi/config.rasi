@@ -38,4 +38,5 @@ configuration {
     kb-remove-char-back: "BackSpace";
 }
 
-@theme "themes/tokyonight.rasi"
+//@theme "themes/tokyonight.rasi"
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"

@@ -14,6 +14,7 @@ return {
   opts = {
     filesystem = {
       window = {
+        position = 'float',
         width = 26,
         mappings = {
           ['Z'] = 'expand_all_nodes',
