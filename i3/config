@@ -35,6 +35,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+e exec nemo
 bindsym $mod+b exec ~/Downloads/zen/zen
 bindsym $mod+d exec rofi -show drun -theme tokyonight.rasi
+bindsym $mod+t exec --no-startup-id python3 ~/.config/tasks/task_ui.py
 # Using greenclip for clipboard history instead of rofi's built-in one, since it's more feature-rich and customizable
 bindsym $mod+c exec ~/dotfiles/rofi/rofi-greenclip.sh
 bindsym $mod+Shift+w exec ~/dotfiles/rofi/rofi-wallpaper.sh --pick

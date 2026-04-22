@@ -3,7 +3,7 @@ import = ["~/.config/alacritty/colors/tokyo-night.toml"]
 live_config_reload = true
 
 
-# window.opacity = 0.75
+window.opacity = 0.90
 [font]
 size = 8.0
 
