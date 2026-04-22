@@ -12,8 +12,8 @@ set $accent          #7aa2f7
 set $urgent-color    #f7768e
 
 # Gaps
- gaps inner 2
- gaps outer 2
+ gaps inner 6
+ gaps outer 3
 
 # Remove window titles
 default_border pixel 0
@@ -23,7 +23,7 @@ default_floating_border pixel 0
 exec --no-startup-id dbus-launch nm-applet
 # exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
-	exec --no-startup-id feh --bg-scale ~/Pictures/wallpapers/wall1/cafe-at-night.png
+exec --no-startup-id ~/dotfiles/rofi/rofi-wallpaper.sh --restore
 exec --no-startup-id dunst
 # Uncomment if you want blueman or ulauncher:
 exec --no-startup-id blueman-applet
@@ -37,6 +37,7 @@ bindsym $mod+b exec ~/Downloads/zen/zen
 bindsym $mod+d exec rofi -show drun -theme tokyonight.rasi
 # Using greenclip for clipboard history instead of rofi's built-in one, since it's more feature-rich and customizable
 bindsym $mod+c exec ~/dotfiles/rofi/rofi-greenclip.sh
+bindsym $mod+Shift+w exec ~/dotfiles/rofi/rofi-wallpaper.sh --pick
 bindsym $mod+w kill
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
