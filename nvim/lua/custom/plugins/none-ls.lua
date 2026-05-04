@@ -12,6 +12,7 @@ return {
           fmt.google_java_format.with { extra_args = { '--aosp' } },
           -- # DIAGNOSTICS #
           dgn.checkstyle.with {
+            command = vim.fn.stdpath 'data' .. '/mason/packages/checkstyle/checkstyle',
             extra_args = {
               '-c',
               vim.fn.expand '~/dotfiles/config/google_checks.xml',
