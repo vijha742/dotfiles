@@ -17,7 +17,7 @@ configuration {
     drun-show-actions: false;
     
     /* Terminal for running terminal apps */
-    terminal: "alacritty";
+    terminal: "ghostty";
     
     /* SSH settings */
     ssh-client: "ssh";
@@ -38,5 +38,5 @@ configuration {
     kb-remove-char-back: "BackSpace";
 }
 
-//@theme "themes/tokyonight.rasi"
-@theme "/usr/share/rofi/themes/DarkBlue.rasi"
+@theme "themes/tokyonight.rasi"
+// @theme "/usr/share/rofi/themes/DarkBlue.rasi"
